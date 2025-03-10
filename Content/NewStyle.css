@@ -1,0 +1,51 @@
+﻿/* 🏠 Navigation Menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    background-color: black;
+}
+
+    nav ul li {
+        padding: 10px 20px;
+    }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+            nav ul li a:hover {
+                background-color: grey;
+            }
+
+/* 📸 Image Styling */
+img {
+    width: 150px;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+    /* 👀 Flip Image on Hover */
+    img:hover {
+        transform: scaleX(-1);
+    }
+
+/* 📝 Section Styling */
+section {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* 📚 Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}

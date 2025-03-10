@@ -1,0 +1,34 @@
+﻿@model List<KuhleStudyProfile.Models.KuhleStudyGroupModel>
+
+
+@{
+    ViewData["Title"] = "Study Group Members";
+}
+
+<h2>Study Group Members</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model[0].StudentNumber)</th>
+            <th>@Html.DisplayNameFor(model => model[0].Name)</th>
+            <th>@Html.DisplayNameFor(model => model[0].Surname)</th>
+            <th>@Html.DisplayNameFor(model => model[0].EmailAddress)</th>
+            <th>Personal Page</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.StudentNumber)</td>
+                <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                <td>@Html.DisplayFor(modelItem => item.Surname)</td>
+                <td>@Html.DisplayFor(modelItem => item.EmailAddress)</td>
+                <td>
+                    <a href="@Url.Content(item.myLink)" class="btn btn-primary">LINK</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
